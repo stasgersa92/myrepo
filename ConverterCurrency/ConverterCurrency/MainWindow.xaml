@@ -1,0 +1,29 @@
+﻿<Window x:Class="ConverterCurrency.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConverterCurrency"
+        mc:Ignorable="d"
+        Title="Конвертер валют" Height="340.841" Width="386.757" Background="Silver">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="17*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox HorizontalAlignment="Left" Height="119" Margin="22,105,0,0" Name="txtbResult" TextWrapping="Wrap" Text="" FontFamily="Arial " FontSize="14" FontStyle="Italic" VerticalAlignment="Top" Width="336" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnConvert" Content="Конвертировать" HorizontalAlignment="Left" Margin="44,241,0,0" VerticalAlignment="Top" Width="266" Click="Button_Click" Height="30" Grid.ColumnSpan="2"/>
+        <Label Content="ВАЛЮТА:" HorizontalAlignment="Left" Margin="22,24,0,0" VerticalAlignment="Top" FontSize="14" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="cmbCurrency" HorizontalAlignment="Left" Margin="12,28,0,0" VerticalAlignment="Top" Width="187" Grid.Column="1">
+            <TextBlock>Австралийский доллар (AUD)</TextBlock>
+            <TextBlock>Азербайджанский манат (AZN)</TextBlock>
+            <TextBlock>Фунт стерлингов Соединенного королевства (GBP)</TextBlock>
+            <TextBlock>Доллар США (USD)</TextBlock>
+            <TextBlock>Евро (EUR)</TextBlock>
+            <TextBlock>Китайский юань (CNY)</TextBlock>
+            <TextBlock>Гонконгский доллар (HKD)</TextBlock>
+        </ComboBox>
+        <Label Content="Результат конвертирования:" HorizontalAlignment="Left" Margin="22,71,0,0" VerticalAlignment="Top" FontSize="14" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
